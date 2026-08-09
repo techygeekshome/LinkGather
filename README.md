@@ -8,10 +8,10 @@
 
 [![Version](https://img.shields.io/badge/version-2.3.0-4c9bff)](https://wordpress.org/plugins/linkgather/)
 [![WordPress](https://img.shields.io/badge/WordPress-5.6%2B-0078d4)](https://wordpress.org/plugins/linkgather/)
-[![License](https://img.shields.io/badge/license-GPLv2%20or%20later-3fca86)](LICENSE)
+[![License](https://img.shields.io/badge/license-proprietary%20freeware-b7791f)](LICENSE)
 [![Made by TechyGeeksHome](https://img.shields.io/badge/made%20by-TechyGeeksHome-b191f2)](https://techygeekshome.info)
 
-[Features](#-what-it-does) · [Screenshots](#-screenshots) · [Installation](#-installation) · [Build from source](#-build-from-source) · [License](#-license)
+[Features](#-what-it-does) · [Screenshots](#-screenshots) · [Installation](#-installation) · [Source in this repository](#-source-in-this-repository) · [License](#-license)
 
 </div>
 
@@ -44,17 +44,19 @@ Already at 60+ active installations and 5 stars on WordPress.org.
 - 📤 **CSV export**, including the author column, for handing off audits or dropping into a spreadsheet.
 - 👁️ **Direct links** to view or edit each post/page.
 
-## 🔧 Build from source
+## 📦 Source in this repository
 
-LinkGather is a single, self-contained PHP plugin — no build step and no external dependencies. To run it from source: clone or download this repo, then drop the folder into `wp-content/plugins/` and activate it from **Plugins** in wp-admin.
+LinkGather is a single, self-contained PHP plugin — no build step and no external dependencies. This repository mirrors the plugin's current WordPress.org release for transparency and direct download: drop the folder into `wp-content/plugins/` and activate it from **Plugins** in wp-admin.
 
-## 🐛 Support & contributing
+## 🐛 Support
 
-Found a bug or have a feature request? [Open an issue](https://github.com/techygeekshome/linkgather/issues) here, use the [WordPress.org support forum](https://wordpress.org/support/plugin/linkgather/), or [get in touch](https://techygeekshome.info/contact/).
+Found a bug or have a feature request? Use the [WordPress.org support forum](https://wordpress.org/support/plugin/linkgather/) or [get in touch](https://techygeekshome.info/contact/).
 
 ## 📄 License
 
-Released under [GPLv2 or later](LICENSE) — © 2026 TechyGeeksHome | Andrew Armstrong.
+LinkGather is free to download and use. This repository is proprietary freeware, not an open-source project — see [LICENSE](LICENSE) for the full terms. (The copy distributed via the official WordPress Plugin Directory is licensed GPLv2-or-later, as required by wordpress.org — see the note in [LICENSE](LICENSE).)
+
+© 2026 TechyGeeksHome | Andrew Armstrong.
 
 ---
 
