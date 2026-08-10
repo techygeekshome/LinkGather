@@ -5,7 +5,7 @@ Tags: links, url audit, csv export, content audit, admin
 Requires at least: 5.6
 Tested up to: 7.0.2
 Requires PHP: 8.0
-Stable tag: 2.3.1
+Stable tag: 2.3.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,12 @@ Built for site managers, content auditors, and anyone needing fast access to int
 1. Admin table with filters and export button [screenshot-1.png]
 
 == Changelog ==
+
+
+
+= 2.3.2 =
+* Fixed: the shared "Our Plugins" hub page functions/constants were renamed from the generic tgh_hub_ prefix to a unique tghhub_ prefix, avoiding a naming-collision risk raised by WordPress.org's Plugins Team during a companion plugin's (BackBurner Post Archiver) manual review.
+* Fixed: the shared hub's admin menu no longer registers at a hardcoded top-level position; it now uses WordPress core's default (safe) placement.
 
 = 2.3.1 =
 * Fixed a bug where filtering by Post Type (Post, Page, or Product) could show a "Cannot load linkgather" error instead of the filtered list.
