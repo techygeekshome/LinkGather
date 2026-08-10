@@ -6,7 +6,7 @@
 
 **See every post, page, and custom post type URL on your WordPress site — filter, sort, and export to CSV in one click.**
 
-[![Version](https://img.shields.io/badge/version-2.3.0-4c9bff)](https://wordpress.org/plugins/linkgather/)
+[![Version](https://img.shields.io/badge/version-2.3.2-4c9bff)](https://wordpress.org/plugins/linkgather/)
 [![WordPress](https://img.shields.io/badge/WordPress-5.6%2B-0078d4)](https://wordpress.org/plugins/linkgather/)
 [![License](https://img.shields.io/badge/license-proprietary%20freeware-b7791f)](LICENSE)
 [![Made by TechyGeeksHome](https://img.shields.io/badge/made%20by-TechyGeeksHome-b191f2)](https://techygeekshome.info)
