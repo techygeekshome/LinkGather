@@ -2,7 +2,7 @@
 /**
  * Plugin Name: LinkGather
  * Description: Admin utility to gather internal post/page URLs with post type, author, title, and date filters, one-click URL copying, sorting, pagination, and CSV export (including author).
- * Version: 2.3.2
+ * Version: 2.3.3
  * Requires at least: 5.6
  * Tested up to: 7.0.2
  * Requires PHP: 8.0
@@ -61,38 +61,67 @@ if ( ! function_exists( 'tghhub_render_landing_page' ) ) {
     function tghhub_render_landing_page() {
         $plugins = apply_filters( 'tghhub_plugins', array(
             array(
-                'name'        => 'Controlled Draft Publisher',
-                'description' => 'Hold posts as controlled drafts and publish them on your own schedule.',
+                'name'        => __( 'BackBurner Post Archiver', 'linkgather' ),
+                'description' => __( 'Moves old posts out of active circulation without deleting them or breaking a URL.', 'linkgather' ),
+                'url'         => 'https://wordpress.org/plugins/backburner-post-archiver/',
+            ),
+            array(
+                'name'        => __( 'Controlled Draft Publisher', 'linkgather' ),
+                'description' => __( 'Hold posts as controlled drafts and publish them on your own schedule.', 'linkgather' ),
                 'url'         => 'https://wordpress.org/plugins/controlled-draft-publisher/',
             ),
             array(
-                'name'        => 'LinkGather',
-                'description' => 'Collects and manages links across your site.',
+                'name'        => __( 'LinkGather', 'linkgather' ),
+                'description' => __( 'Collects and manages links across your site.', 'linkgather' ),
                 'url'         => 'https://wordpress.org/plugins/linkgather/',
             ),
         ) );
 
         $themes = array(
             array(
-                'name'        => 'NeoDark Free',
-                'description' => 'A fast, dark-mode WordPress theme for tech blogs, tutorials, and reviews.',
+                'name'        => __( 'NeoDark Free', 'linkgather' ),
+                'description' => __( 'A fast, dark-mode WordPress theme for tech blogs, tutorials and reviews.', 'linkgather' ),
                 'url'         => 'https://techygeekshome.info/neodark-free/',
-                'cta'         => 'View Theme',
+                'cta'         => __( 'View Theme', 'linkgather' ),
+            ),
+            array(
+                'name'        => __( 'NeoDark Pro', 'linkgather' ),
+                'description' => __( 'Hero slider, three-column layout, review blocks and a mega menu. One-time payment.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/neodark-pro/',
+                'cta'         => __( 'View Theme', 'linkgather' ),
             ),
         );
 
         $software = array(
             array(
-                'name'        => 'DiskGeek',
-                'description' => 'Free disk space analyser for Windows: scan, find duplicates, and reclaim space.',
-                'url'         => 'https://techygeekshome.info/introducing-diskgeek-a-free-disk-space-analyser-for-windows/',
-                'cta'         => 'View / Download',
+                'name'        => __( 'AppGeek', 'linkgather' ),
+                'description' => __( 'Update every application on a Windows PC in one go, using winget.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/appgeek/',
+                'cta'         => __( 'View / Download', 'linkgather' ),
+            ),
+            array(
+                'name'        => __( 'PDFGeek', 'linkgather' ),
+                'description' => __( 'Merge, split, compress and convert PDFs entirely offline.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/pdfgeek/',
+                'cta'         => __( 'View / Download', 'linkgather' ),
+            ),
+            array(
+                'name'        => __( 'DiskGeek', 'linkgather' ),
+                'description' => __( 'Free disk space analyser for Windows: scan, find duplicates and reclaim space.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/diskgeek/',
+                'cta'         => __( 'View / Download', 'linkgather' ),
+            ),
+            array(
+                'name'        => __( 'Ultimate Settings Panel', 'linkgather' ),
+                'description' => __( '250+ Windows settings, tools and commands in one fast, searchable panel.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/ultimate-settings-panel-online/',
+                'cta'         => __( 'View / Download', 'linkgather' ),
             ),
         );
         ?>
         <div class="wrap tghhub-dashboard">
             <h1>TechyGeeksHome</h1>
-            <p>A shared home for everything we have built &mdash; our WordPress plugins, our theme, and our standalone software.</p>
+            <p>A shared home for everything we have built &mdash; our WordPress plugins, our themes, and our standalone software.</p>
 
             <h2>Our Plugins</h2>
             <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:12px;">
