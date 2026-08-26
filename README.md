@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://ps.w.org/linkgather/assets/icon-256x256.png" alt="LinkGather logo" width="96" height="96">
+<img src="https://raw.githubusercontent.com/techygeekshome/LinkGather/main/assets/icon-256x256.png" alt="LinkGather logo" width="96" height="96">
 
 # LinkGather
 
 **See every post, page, and custom post type URL on your WordPress site — filter, sort, and export to CSV in one click.**
 
-[![Version](https://img.shields.io/wordpress/plugin/v/linkgather?label=version&color=4c9bff)](https://wordpress.org/plugins/linkgather/)
+[![Version](https://img.shields.io/github/v/release/techygeekshome/LinkGather?label=version&color=4c9bff)](https://github.com/techygeekshome/LinkGather/releases)
 [![WordPress](https://img.shields.io/badge/WordPress-5.6%2B-0078d4)](https://wordpress.org/plugins/linkgather/)
 [![License](https://img.shields.io/badge/license-proprietary%20freeware-b7791f)](LICENSE)
 [![Made by TechyGeeksHome](https://img.shields.io/badge/made%20by-TechyGeeksHome-b191f2)](https://techygeekshome.info)
@@ -25,7 +25,7 @@ No external dependencies, no premium upsell, no telemetry. Just an admin-side co
 ## 📸 Screenshots
 
 <p float="left">
-<img src="https://ps.w.org/linkgather/assets/screenshot-1.png" width="98%" />
+<img src="https://raw.githubusercontent.com/techygeekshome/LinkGather/main/assets/screenshot-1.png" width="98%" />
 </p>
 
 ## ⬇️ Installation
