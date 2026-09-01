@@ -5,7 +5,7 @@ Tags: links, url audit, csv export, content audit, admin
 Requires at least: 5.6
 Tested up to: 7.0.2
 Requires PHP: 8.0
-Stable tag: 2.3.4
+Stable tag: 2.3.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ Admin utility to gather internal post/page URLs with filters, sorting, paginatio
 
 LinkGather is a lightweight admin tool for WordPress that lets you:
 
-* View all published content in a sortable table — any public post type, not just posts and pages
+* View all published content in a sortable table - any public post type, not just posts and pages
 * Filter by post type, author, title keyword, and date range
 * Sort by title or date
 * Paginate results (25 per page)
@@ -36,6 +36,9 @@ Built for site managers, content auditors, and anyone needing fast access to int
 1. Admin table with filters and export button [screenshot-1.png]
 
 == Changelog ==
+
+= 2.3.5 =
+* Added AuthGeek, ShortGeek and SoundGeek to the TechyGeeksHome panel on the plugin's settings screen.
 
 = 2.3.4 =
 * The TechyGeeksHome panel now lists the whole current range of applications rather than four of them, and links to the full list.
@@ -97,7 +100,7 @@ Bug fix: resolves a "Cannot load linkgather" crash when filtering by Post Type. 
 Adds an Author filter/column and one-click URL copying. Tested with WordPress 7.0.2. No settings changes needed.
 
 = 2.2.0 =
-The admin page has moved under a shared "TGH" menu. Your saved settings and data are unaffected — only the menu location changed.
+The admin page has moved under a shared "TGH" menu. Your saved settings and data are unaffected - only the menu location changed.
 
 = 2.1.0 =
 Adds custom post type support, sortable columns, and translation readiness. Recommended for all users.

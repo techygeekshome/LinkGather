@@ -2,7 +2,7 @@
 /**
  * Plugin Name: LinkGather
  * Description: Admin utility to gather internal post/page URLs with post type, author, title, and date filters, one-click URL copying, sorting, pagination, and CSV export (including author).
- * Version: 2.3.4
+ * Version: 2.3.5
  * Requires at least: 5.6
  * Tested up to: 7.0.2
  * Requires PHP: 8.0
@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 add_action( 'admin_menu', 'linkgather_add_admin_menu' );
 
 function linkgather_add_admin_menu() {
-    // Shared "TGH" top-level menu — registered once no matter how many of our
+    // Shared "TGH" top-level menu - registered once no matter how many of our
     // plugins are active at the same time (first one to load wins the
     // registration; every plugin still adds its own submenu page below).
     if ( ! defined( 'TGHHUB_MENU_REGISTERED' ) ) {
@@ -47,7 +47,7 @@ function linkgather_add_admin_menu() {
 /* ---------------------------
    Shared "TGH" hub landing page (identical copy lives in every TGH plugin;
    function_exists() guards mean whichever plugin loads first "wins" and
-   renders it — keep this block in sync across all TGH plugins when the
+   renders it - keep this block in sync across all TGH plugins when the
    plugin/theme/software list changes).
    --------------------------- */
 
@@ -139,6 +139,24 @@ if ( ! function_exists( 'tghhub_render_landing_page' ) ) {
                 'name'        => __( 'TranscribeGeek', 'linkgather' ),
                 'description' => __( 'Turn recordings into text on your own machine, as a transcript or a subtitle file.', 'linkgather' ),
                 'url'         => 'https://techygeekshome.info/transcribegeek/',
+                'cta'         => __( 'View / Download', 'linkgather' ),
+            ),
+            array(
+                'name'        => __( 'AuthGeek', 'linkgather' ),
+                'description' => __( 'Keep your two-factor codes in one encrypted file on your own PC. No account, no sync.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/authgeek/',
+                'cta'         => __( 'View / Download', 'linkgather' ),
+            ),
+            array(
+                'name'        => __( 'ShortGeek', 'linkgather' ),
+                'description' => __( 'Turn a guide, a feed or an idea into a narrated, captioned vertical short.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/shortgeek/',
+                'cta'         => __( 'View / Download', 'linkgather' ),
+            ),
+            array(
+                'name'        => __( 'SoundGeek', 'linkgather' ),
+                'description' => __( 'Clean up a recording: background noise, mains hum and levels, on your own machine.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/soundgeek/',
                 'cta'         => __( 'View / Download', 'linkgather' ),
             ),
             array(
@@ -271,8 +289,7 @@ function linkgather_get_orderby_whitelist() {
 }
 
 /**
- * Authors who have actually published one of the supported post types —
- * not every registered user — so the filter dropdown stays short and useful
+ * Authors who have actually published one of the supported post types - * not every registered user - so the filter dropdown stays short and useful
  * on sites with a lot of subscriber/customer accounts.
  */
 function linkgather_get_authors() {
@@ -487,7 +504,7 @@ function linkgather_render_admin_page() {
 
     echo '</tbody></table>';
 
-    // Small inline script for the per-row "Copy" button — clipboard API with an
+    // Small inline script for the per-row "Copy" button - clipboard API with an
     // execCommand fallback for older browsers. No external requests, no CDN.
     ?>
     <script>
