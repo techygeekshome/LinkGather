@@ -5,7 +5,7 @@ Tags: links, url audit, csv export, content audit, admin
 Requires at least: 5.6
 Tested up to: 7.0.2
 Requires PHP: 8.0
-Stable tag: 2.3.3
+Stable tag: 2.3.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -36,6 +36,9 @@ Built for site managers, content auditors, and anyone needing fast access to int
 1. Admin table with filters and export button [screenshot-1.png]
 
 == Changelog ==
+
+= 2.3.4 =
+* The TechyGeeksHome panel now lists the whole current range of applications rather than four of them, and links to the full list.
 
 = 2.3.3 =
 * The TechyGeeksHome hub page now lists everything: BackBurner Post Archiver (newly live on WordPress.org), AppGeek, PDFGeek, Ultimate Settings Panel and NeoDark Pro were all missing. The DiskGeek link pointed at an old announcement post rather than its product page.

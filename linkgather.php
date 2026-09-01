@@ -2,7 +2,7 @@
 /**
  * Plugin Name: LinkGather
  * Description: Admin utility to gather internal post/page URLs with post type, author, title, and date filters, one-click URL copying, sorting, pagination, and CSV export (including author).
- * Version: 2.3.3
+ * Version: 2.3.4
  * Requires at least: 5.6
  * Tested up to: 7.0.2
  * Requires PHP: 8.0
@@ -94,21 +94,51 @@ if ( ! function_exists( 'tghhub_render_landing_page' ) ) {
 
         $software = array(
             array(
+                'name'        => __( 'PDFGeek', 'linkgather' ),
+                'description' => __( 'Merge, split, extract, rotate, watermark and password-protect PDFs, entirely offline.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/pdfgeek/',
+                'cta'         => __( 'View / Download', 'linkgather' ),
+            ),
+            array(
                 'name'        => __( 'AppGeek', 'linkgather' ),
                 'description' => __( 'Update every application on a Windows PC in one go, using winget.', 'linkgather' ),
                 'url'         => 'https://techygeekshome.info/appgeek/',
                 'cta'         => __( 'View / Download', 'linkgather' ),
             ),
             array(
-                'name'        => __( 'PDFGeek', 'linkgather' ),
-                'description' => __( 'Merge, split, compress and convert PDFs entirely offline.', 'linkgather' ),
-                'url'         => 'https://techygeekshome.info/pdfgeek/',
+                'name'        => __( 'CleanGeek', 'linkgather' ),
+                'description' => __( 'Clear out temporary files, caches and leftovers, and see what was actually removed.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/cleangeek/',
+                'cta'         => __( 'View / Download', 'linkgather' ),
+            ),
+            array(
+                'name'        => __( 'CutGeek', 'linkgather' ),
+                'description' => __( 'Take the background out of a photograph at full size, on your own machine.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/cutgeek/',
                 'cta'         => __( 'View / Download', 'linkgather' ),
             ),
             array(
                 'name'        => __( 'DiskGeek', 'linkgather' ),
-                'description' => __( 'Free disk space analyser for Windows: scan, find duplicates and reclaim space.', 'linkgather' ),
+                'description' => __( 'Free disk space analyser: see what is filling a drive, find the biggest files and duplicates.', 'linkgather' ),
                 'url'         => 'https://techygeekshome.info/diskgeek/',
+                'cta'         => __( 'View / Download', 'linkgather' ),
+            ),
+            array(
+                'name'        => __( 'DriverGeek', 'linkgather' ),
+                'description' => __( 'Find out which drivers are out of date, and get them from the manufacturer, not a bundle.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/drivergeek/',
+                'cta'         => __( 'View / Download', 'linkgather' ),
+            ),
+            array(
+                'name'        => __( 'ReelGeek', 'linkgather' ),
+                'description' => __( 'Turn a folder of photographs into a vertical edit cut to a beat grid.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/reelgeek/',
+                'cta'         => __( 'View / Download', 'linkgather' ),
+            ),
+            array(
+                'name'        => __( 'TranscribeGeek', 'linkgather' ),
+                'description' => __( 'Turn recordings into text on your own machine, as a transcript or a subtitle file.', 'linkgather' ),
+                'url'         => 'https://techygeekshome.info/transcribegeek/',
                 'cta'         => __( 'View / Download', 'linkgather' ),
             ),
             array(
@@ -121,7 +151,7 @@ if ( ! function_exists( 'tghhub_render_landing_page' ) ) {
         ?>
         <div class="wrap tghhub-dashboard">
             <h1>TechyGeeksHome</h1>
-            <p>A shared home for everything we have built &mdash; our WordPress plugins, our themes, and our standalone software.</p>
+            <p>A shared home for everything we have built: our WordPress plugins, our themes, and our standalone software.</p>
 
             <h2>Our Plugins</h2>
             <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:12px;">
@@ -146,6 +176,7 @@ if ( ! function_exists( 'tghhub_render_landing_page' ) ) {
             </div>
 
             <h2 style="margin-top:32px;">Our Software</h2>
+            <p>All free, all offline, all for Windows. <a href="https://techygeekshome.info/geek-tools/" target="_blank" rel="noopener">See the whole range</a>.</p>
             <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:12px;">
                 <?php foreach ( $software as $s ) : ?>
                     <div style="border:1px solid #dcdcde;border-radius:6px;padding:16px;width:280px;background:#fff;">
